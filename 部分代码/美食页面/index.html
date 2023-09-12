@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>美食网站登录页</title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+			}
+
+			.clear::after {
+				content: "";
+				clear: both;
+				display: block;
+				height: 0;
+				visibility: hidden;
+			}
+
+			a {
+				text-decoration: none;
+				color: black;
+			}
+
+			a:hover {
+				font-weight: bold;
+			}
+
+			.container {
+				width: 100%;
+				position: relative;
+			}
+
+			.container .bg {
+				width: 100%;
+			}
+
+			.green {
+				width: 100%;
+				height: 125px;
+				background-color: rgba(2, 223, 130, 0.9);
+				position: absolute;
+				top: 80px;
+			}
+
+			.wrap {
+				width: 1000px;
+				margin: 0 auto;
+			}
+
+			.nav .logo {
+				width: 200px;
+				margin-top: 15px;
+				float: left;
+			}
+
+			.nav .right {
+				float: right;
+			}
+
+			.nav li {
+				float: left;
+				line-height: 125px;
+				margin: 0 15px;
+			}
+
+			.nav li a {
+				color: white;
+				font-size: 18px;
+			}
+
+			.green .text {
+				font-size: 36px;
+				color: white;
+				padding-left: 150px;
+				line-height: 1.8em;
+				padding-top: 20px;
+			}
+
+			.pic {
+				width: 100%;
+				height: 600px;
+				background: url(img/2.jpg) no-repeat right center;
+			}
+
+			.login {
+				padding: 60px;
+			}
+
+			.login h1 {
+				font-family: "楷体";
+				font-size: 40px;
+				font-weight: normal;
+				margin-bottom: 50px;
+				text-align: center;
+			}
+
+			.form {
+				width: 400px;
+				box-shadow: 0px 0px 15px #ededed;
+				padding: 50px 30px 40px 50px;
+				margin: 0 auto;
+			}
+
+			.item1 {
+				height: 38px;
+				margin-bottom: 30px;
+				border: 1px #bdbdbd solid;
+			}
+
+			.item1 input {
+				border: 0;
+				height: 38px;
+				width: 300px;
+				padding: 0 0 0 10px;
+				font-size: 14px;
+			}
+
+			.item2 {
+				margin-bottom: 20px;
+				font-size: 0;
+			}
+
+			.item2 label {
+				font-size: 14px;
+				vertical-align: middle;
+			}
+
+			.item2 input {
+				vertical-align: middle;
+				margin-right: 5px;
+			}
+
+			.item2 a {
+				float: right;
+				font-size: 14px;
+				color: black;
+			}
+
+			.login-btn {
+				display: block;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+				color: #fff;
+				background: #02df82;
+				font-size: 18px;
+				margin-bottom: 30px;
+			}
+
+			.form p {
+				text-align: center;
+				font-size: 14px;
+			}
+
+			.form p a {
+				color: #FF0000;
+			}
+
+			.gray {
+				width: 100%;
+				height: 300px;
+				background-color: #565353;
+			}
+			.aside{
+				padding-top: 50px;
+			}
+
+			.aside dl {
+				float: left;
+				margin-right: 80px;
+				line-height: 30px;
+			}
+			.aside dt{
+				font-size: 30px;
+				color: #02DF82;
+				font-family: "楷体";
+				margin-bottom: 30px;
+			}
+			.aside dd a{
+				font-size: 14px;
+				color: #BDBDBD;
+			}
+			.map{
+				width: 400px;
+				height: 200px;
+				float: right;
+			}
+			.copy{
+				height: 100px;
+				background-color: #333333;
+				text-align: center;
+				color: white;				
+			}
+			.copy p{
+				padding-top: 40px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<img src="img/1.jpg" class="bg">
+				<div class="green">
+					<div class="wrap clear">
+						<div class="nav">
+							<div class="logo"><img src="./img/LOGO.png"></div>
+							<ul class="right">
+								<li><a href="">网站首页</a></li>
+								<li><a href="">特色菜单</a></li>
+								<li><a href="">美食推荐</a></li>
+								<li><a href="">联系我们</a></li>
+								<li><a href="">登录</a></li>
+								<li><a href="">注册</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="text">
+						<p>不辜负在最好的时光里，<br>
+							遇见美食的精致。</p>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="container">
+				<div class="pic">
+					<div class="wrap">
+						<div class="login">
+							<h1>登录你的账户</h1>
+							<div class="form">
+								<form action="">
+									<div class="item1">
+										<input type="text" placeholder="用户名">
+									</div>
+									<div class="item1">
+										<input type="text" placeholder="密码">
+									</div>
+									<div class="item2">
+										<input type="checkbox" name="auto" id="auto" />
+										<label for="auto">自动登录</label>
+										<a href="">忘记密码?</a>
+									</div>
+									<a href="" class="login-btn">登 录</a>
+									<p>没有账户?&nbsp;&nbsp;<a href="">立即注册</a></p>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="gray">
+					<div class="wrap">
+						<div class="aside clear">
+							<dl>
+								<dt>公司</dt>
+								<dd><a href="">关于我们</a></dd>
+								<dd><a href="">联系我们</a></dd>
+								<dd><a href="">事业成就</a></dd>
+								<dd><a href="">加入我们</a></dd>
+							</dl>
+							<dl>
+								<dt>帮助</dt>
+								<dd><a href="">常见问题</a></dd>
+								<dd><a href="">退换商品</a></dd>
+								<dd><a href="">订单状态</a></dd>
+								<dd><a href="">服务提供</a></dd>
+							</dl>
+							<dl>
+								<dt>服务</dt>
+								<dd><a href="">条款与条件</a></dd>
+								<dd><a href="">隐私政策</a></dd>
+								<dd><a href="">退货政策</a></dd>
+							</dl>
+							<dl>
+								<dt>菜单</dt>
+								<dd><a href="">全天菜单</a></dd>
+								<dd><a href="">午餐</a></dd>
+								<dd><a href="">晚餐</a></dd>
+								<dd><a href="">风味小吃</a></dd>
+							</dl>
+							<div class="map">
+								<a href=""><img src="img/地图.jpg" ></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="copy">
+					<p>Copyright &copy; 2023.UAO美食餐厅 All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
